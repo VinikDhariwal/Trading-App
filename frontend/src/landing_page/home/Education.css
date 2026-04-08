@@ -1,0 +1,47 @@
+/* Education.css */
+
+.education-container {
+  padding: 5rem 1rem;
+}
+
+/* IMAGE */
+.education-image {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* CONTENT */
+.education-content {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.education-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+/* TEXT */
+.education-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .education-container {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .education-image {
+    margin-bottom: 2rem;
+  }
+}

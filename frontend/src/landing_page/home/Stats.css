@@ -1,0 +1,76 @@
+/* stats.css */
+
+.stats-container {
+  padding: 5rem 1rem;
+}
+
+/* CENTER BOTH SIDES */
+.stats-content {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.stats-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+/* SUB HEADINGS */
+.stats-subtitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+/* TEXT */
+.stats-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 2;
+}
+
+/* IMAGE */
+.stats-image {
+  width: 100%;
+  max-width: 510px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ROW CENTERING */
+.stats-row {
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .stats-content {
+    text-align: center;
+  }
+}
+
+/* LINKS SECTION */
+.stats-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* LINK STYLE */
+.stats-link {
+  text-decoration: none;
+  color: #387ed1;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.stats-link:hover {
+  color: #2f6db5;
+}
