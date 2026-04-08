@@ -1,0 +1,40 @@
+/* Pricing.css */
+
+.pricing-container {
+  padding: 5rem 1rem;
+}
+
+/* BOX FIX */
+.pricing-box {
+  border: 1px solid #eee;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fff;
+
+  /* 🔥 KEY FIXES */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.pricing-box h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-box p {
+  color: #666;
+}
+
+/* HOVER
+.pricing-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+} */
+
+/* CENTER CONTENT LIKE OTHER SECTIONS */
+.pricing-content {
+  max-width: 520px;
+}
