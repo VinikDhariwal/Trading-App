@@ -1,15 +1,15 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom sticky-top">
       <div className="container">
-
         {/* LOGO */}
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img src="/Assets/logo.svg" alt="logo" className="nav-logo" />
-        </a>
+        </Link>
 
         {/* TOGGLER */}
         <button
@@ -22,39 +22,49 @@ function Navbar() {
         </button>
 
         {/* MENU */}
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
-
             <li className="nav-item">
-              <a className="nav-link" href="#">Signup</a>
+              <Link className="nav-link" to="/signup">
+                Signup
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Products</a>
+              <Link className="nav-link" to="/products">
+                Products
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <Link className="nav-link" to="/pricing">
+                Pricing
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Support</a>
+              <Link className="nav-link" to="/support">
+                Support
+              </Link>
             </li>
 
             {/* MENU ICON */}
             <li className="nav-item">
-              <a className="nav-link">
+              <Link className="nav-link">
                 <i className="fa-solid fa-bars"></i>
-              </a>
+              </Link>
             </li>
-
           </ul>
         </div>
-
       </div>
     </nav>
   );

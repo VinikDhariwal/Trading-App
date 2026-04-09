@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Stats.css";
 
 function Stats() {
@@ -45,12 +46,12 @@ function Stats() {
 
           {/* LINKS */}
           <div className="stats-links">
-            <a href="#" className="stats-link">
+            <Link to="/products" className="stats-link">
               Explore products <i className="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" className="stats-link">
+            </Link>
+            <Link to="/kite" className="stats-link">
               Try Kite <i className="fa-solid fa-arrow-right"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

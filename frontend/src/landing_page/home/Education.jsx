@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Education.css";
 
 function Education() {
@@ -27,18 +28,18 @@ function Education() {
             covering everything from the basics to advanced trading.
           </p>
 
-          <a href="#" className="stats-link">
+          <Link to="/varasity" className="stats-link">
             Varsity <i className="fa-solid fa-arrow-right"></i>
-          </a>
+          </Link>
 
           <p className="education-text mt-4">
             TradingQ&A, the most active trading and investment community in India
             for all your market related queries.
           </p>
 
-          <a href="#" className="stats-link">
+          <Link to="/tradingq&a" className="stats-link">
             Trading Q&amp;A <i className="fa-solid fa-arrow-right"></i>
-          </a>
+          </Link>
 
         </div>
 
