@@ -6,7 +6,7 @@ function Hero() {
     <div className="container hero-container">
       <div className="row justify-content-center">
 
-        <div className="col-12 text-center">
+        <div className="col-12 text-center mb-5">
           <img
             src="Assets/homeHero.png"
             alt="hero-image"
