@@ -1,0 +1,57 @@
+/* Navbar.css */
+
+.navbar-custom {
+  background-color: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* LOGO */
+.nav-logo {
+  width: 120px;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+  color: #666;
+  font-size: 0.95rem;
+  margin-left: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+/* HOVER */
+.navbar-nav .nav-link:hover {
+  color: #387ed1;
+}
+
+/* ACTIVE LINK (optional) */
+.navbar-nav .nav-link.active {
+  color: #387ed1;
+  font-weight: 500;
+}
+
+/* MENU ICON */
+.navbar-nav .fa-bars {
+  font-size: 1.2rem;
+}
+
+/* REMOVE BOOTSTRAP GREEN FOCUS */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+  }
+}
