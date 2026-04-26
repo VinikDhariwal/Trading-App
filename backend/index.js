@@ -1,13 +1,14 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const {HoldingsModel} = require("./model/HoldingsModel");
+const {PositionsModel} = require("./model/PositionsModel");
 
 const PORT = process.env.PORT || 8080;
 const URI = process.env.MONGO_URL;
 
 const app = express();
 
-// Connect DB first
 mongoose.connect(URI)
 .then(() => {
     console.log("MongoDB Connected");
