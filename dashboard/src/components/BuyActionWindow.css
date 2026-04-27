@@ -1,0 +1,199 @@
+/* BuyActionWindow.css */
+
+.buy-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.buy-header {
+  background: #4184f3;
+  padding: 16px 20px;
+}
+
+.buy-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-header-label {
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.buy-header-value {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 2px 0 0;
+}
+
+.buy-radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.buy-radio-group label {
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.buy-radio-group input {
+  margin-right: 5px;
+}
+
+.buy-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.buy-tabs button {
+  flex: 1;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #999;
+}
+
+.buy-tabs button.active {
+  color: #4184f3;
+  border-bottom: 2px solid #4184f3;
+}
+
+.buy-body {
+  padding: 20px;
+}
+
+.buy-input-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.buy-input-row fieldset {
+  flex: 1;
+  border: 0.7px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.buy-input-row fieldset legend {
+  font-size: 11px;
+  color: #999;
+  padding: 0 4px;
+}
+
+.buy-input-row fieldset input {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  padding: 4px 0;
+  background: transparent;
+}
+
+.buy-validity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.buy-validity-row span {
+  font-size: 12px;
+  color: #999;
+}
+
+.buy-validity-row label {
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.buy-validity-row input {
+  margin-right: 4px;
+}
+
+.buy-validity-options {
+  display: flex;
+  gap: 12px;
+}
+
+.buy-margin-box {
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-margin-box span:first-child {
+  font-size: 12px;
+  color: #999;
+}
+
+.buy-margin-box span:last-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.buy-footer {
+  padding: 0 20px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.buy-btn {
+  flex: 1;
+  padding: 12px;
+  background: #4184f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background: #74a7fa;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+.buy-header-top,
+.sell-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
