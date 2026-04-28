@@ -4,11 +4,27 @@ import axios from "axios";
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
-  useEffect(() => {
+  const fetchHoldings = () => {
     axios.get("http://localhost:8080/allHoldings").then((res) => {
-      setAllHoldings(res.data); // removed extra []
+      setAllHoldings(res.data);
     });
+  };
+
+  useEffect(() => {
+    fetchHoldings();
+    const interval = setInterval(fetchHoldings, 5000);
+    return () => clearInterval(interval);
   }, []);
+
+  const totalInvestment = allHoldings.reduce(
+    (acc, stock) => acc + stock.avg * stock.qty, 0
+  );
+
+  const currentValue = allHoldings.reduce(
+    (acc, stock) => acc + stock.price * stock.qty, 0
+  );
+
+  const pnl = currentValue - totalInvestment;
 
   return (
     <>
@@ -30,8 +46,8 @@ const Holdings = () => {
           <tbody>
             {allHoldings.map((stock, index) => {
               const currValue = stock.price * stock.qty;
-              const pnl = currValue - stock.avg * stock.qty;
-              const profClass = pnl >= 0 ? "profit" : "loss";
+              const stockPnl = currValue - stock.avg * stock.qty;
+              const profClass = stockPnl >= 0 ? "profit" : "loss";
               const dayClass = stock.isLoss ? "loss" : "profit";
 
               return (
@@ -41,7 +57,7 @@ const Holdings = () => {
                   <td>{stock.avg.toFixed(2)}</td>
                   <td>{stock.price.toFixed(2)}</td>
                   <td>{currValue.toFixed(2)}</td>
-                  <td className={profClass}>{pnl.toFixed(2)}</td>
+                  <td className={profClass}>{stockPnl.toFixed(2)}</td>
                   <td className={profClass}>{stock.net}</td>
                   <td className={dayClass}>{stock.day}</td>
                 </tr>
@@ -52,15 +68,17 @@ const Holdings = () => {
       </div>
       <div className="row">
         <div className="col">
-          <h5>29,875.<span>55</span></h5>
+          <h5>{totalInvestment.toFixed(2)}</h5>
           <p>Total investment</p>
         </div>
         <div className="col">
-          <h5>31,428.<span>95</span></h5>
+          <h5>{currentValue.toFixed(2)}</h5>
           <p>Current value</p>
         </div>
         <div className="col">
-          <h5>1,553.40 (+5.20%)</h5>
+          <h5 className={pnl >= 0 ? "profit" : "loss"}>
+            {pnl.toFixed(2)} ({((pnl / totalInvestment) * 100).toFixed(2)}%)
+          </h5>
           <p>P&L</p>
         </div>
       </div>
