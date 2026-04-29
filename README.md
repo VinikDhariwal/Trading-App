@@ -59,7 +59,6 @@ The platform enables users to simulate stock trading activities with an **intera
 ---
 
 ## 🧠 Core Concepts Applied
-
 - Component-based architecture (React)
 - State management using hooks
 - Conditional rendering and dynamic styling
