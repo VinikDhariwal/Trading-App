@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.trading-signup-page {
+  min-height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem 1rem;
+}
+
+.trading-signup-card {
+  display: flex;
+  width: 100%;
+  max-width: 860px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 0.5px solid #dde1e7;
+  min-height: 520px;
+}
+
+/* ── LEFT ── */
+
+.trading-left {
+  flex: 1.1;
+  background: #387ed1;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.trading-left::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.trading-left::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.trading-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-logo-mark {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trading-logo-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.trading-banner-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.75rem;
+  display: block;
+  object-fit: cover;
+  max-height: 180px;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-left h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 26px;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-left p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-badge {
+  background: rgba(255, 255, 255, 0.15);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* ── RIGHT ── */
+
+.trading-right {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trading-right h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: #1a1a2e;
+  font-weight: 400;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.trading-subtitle {
+  font-size: 13.5px;
+  color: #8b95a1;
+  margin-bottom: 2rem;
+}
+
+.trading-field {
+  margin-bottom: 1rem;
+}
+
+.trading-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555e6d;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.trading-field input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #dde1e7;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a2e;
+  background: #fafbfc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.trading-field input:focus {
+  border-color: #387ed1;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.1);
+}
+
+.trading-field input::placeholder {
+  color: #b0b8c4;
+}
+
+.trading-signup-btn {
+  width: 100%;
+  padding: 13px;
+  background: #387ed1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  letter-spacing: 0.2px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.trading-signup-btn:hover {
+  background: #2d6bbf;
+}
+
+.trading-signup-btn:active {
+  transform: scale(0.99);
+}
+
+.trading-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1.25rem 0;
+}
+
+.trading-divider::before,
+.trading-divider::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: #dde1e7;
+}
+
+.trading-divider span {
+  font-size: 12px;
+  color: #b0b8c4;
+  white-space: nowrap;
+}
+
+.trading-login-text {
+  font-size: 13.5px;
+  color: #8b95a1;
+  text-align: center;
+}
+
+.trading-login-text span {
+  color: #387ed1;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
