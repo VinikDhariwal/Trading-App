@@ -9,7 +9,6 @@ The platform enables users to simulate stock trading activities with an **intera
 ---
 
 ## 🔧 Tech Stack
-
 - **Frontend:** React.js, JavaScript, HTML5, CSS3  
 - **UI/UX:** Material UI, Responsive Design, Flexbox  
 - **Data Visualization:** Chart.js  
