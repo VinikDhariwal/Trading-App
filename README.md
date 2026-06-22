@@ -70,4 +70,3 @@ The platform enables users to simulate stock trading activities with an **intera
 - Conditional rendering and dynamic styling
 - Event handling and user interaction design
 - Scalable and modular frontend structure
-
